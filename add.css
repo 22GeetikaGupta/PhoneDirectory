@@ -1,0 +1,19 @@
+body {
+	background-color: rgb(10,20,30);
+	text-align: center;
+	margin-top: 10%;
+}
+
+p {
+	font-size: 25px;
+}
+
+#full{
+	width: 30%;
+	align-self: center;
+	border: 5px;
+	border-style: solid;
+	margin: auto;
+	
+}
+
