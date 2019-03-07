@@ -1,7 +1,7 @@
 		
 directory.forEach(info=>{
 	var item = document.createElement("tr");
-	
+	var table = document.getElementById('table');
 	var data = document.createElement("td");
 	var dataname = info.dataname;
 	data.innerHTML = dataname;
@@ -17,16 +17,17 @@ directory.forEach(info=>{
 	but.appendChild(del);
 	but.setAttribute("id",`but${n}`);
 	but.setAttribute("value",`${n}`);
-
+	var buttontd = document.createElement("td");
+	buttontd.appendChild(but);
 	item.appendChild(data);
 	item.appendChild(phone);
-	item.appendChild(but);
+	item.appendChild(buttontd);
 
 	but.onclick = () =>{
 		deleteEntry(`${but.value}`)
 	};
 	
-	document.body.appendChild(item);
+	table.appendChild(item);
 	n++;
 	
 	

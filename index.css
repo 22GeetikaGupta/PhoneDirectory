@@ -1,8 +1,9 @@
 body {
-	background-color: rgb(57,66,78);
+	background-color: white;
 }
 
 td{
+	padding: 20px;
 	padding-right: 100px;
 }
 
@@ -15,6 +16,7 @@ h1 {
 }
 
 table {
+	margin: auto;
 	font-size: 20px;
 }
 
